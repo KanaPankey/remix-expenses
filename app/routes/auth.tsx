@@ -1,4 +1,4 @@
-import authStyles from './auth.css';
+import authStyles from '~/styles/auth.css';
 
 export default function Auth() {  
   return (
