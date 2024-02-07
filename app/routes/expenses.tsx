@@ -1,4 +1,5 @@
 import { Outlet } from "@remix-run/react";
+import expensesStyles from "~/styles/expenses.css";
 
 export default function Expenses() {  
   return (
@@ -7,4 +8,8 @@ export default function Expenses() {
       <Outlet />
     </div>
   );
+}
+
+export function links() {
+  return [{ rel: "stylesheet", href: expensesStyles }];
 }
