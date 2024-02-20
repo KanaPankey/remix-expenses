@@ -1,6 +1,7 @@
 import { FaTrophy, FaHandshake } from 'react-icons/fa';
 
 import PricingPlan from '~/components/marketing/PricingPlan';
+import MainHeader from '~/components/navigation/MainHeader';
 
 const PRICING_PLANS = [
   {
@@ -22,6 +23,7 @@ const PRICING_PLANS = [
 export default function PricingPage() {
   return (
     <main id="pricing">
+      <MainHeader />
       <h2>Great Product, Simple Pricing</h2>
       <ol id="pricing-plans">
         {PRICING_PLANS.map((plan) => (

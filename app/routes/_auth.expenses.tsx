@@ -1,6 +1,7 @@
 import { Outlet } from "@remix-run/react";
 import expensesStyles from "~/styles/expenses.css";
 import ExpensesList from "~/components/expenses/ExpensesList";
+import ExpensesHeader from "~/components/navigation/ExpensesHeader";
 
 const DUMMY_EXPENSES = [
   {

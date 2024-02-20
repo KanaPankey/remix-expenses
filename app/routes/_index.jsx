@@ -1,9 +1,11 @@
 import { Link } from '@remix-run/react';
 import { FaArrowRight, FaDollarSign, FaChartBar } from 'react-icons/fa';
+import MainHeader from '../components/navigation/MainHeader';
 
 export default function Index() {
   return (
     <main>
+      <MainHeader />
       <section className="marketing-section">
         <header>
           <FaDollarSign />
