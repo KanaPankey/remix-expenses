@@ -15,3 +15,7 @@ export default function Add() {
     </Modal>
   );
 }
+
+export function action() {
+  
+}
