@@ -1,5 +1,8 @@
 import { type } from "os";
-import { prisma } from "./database.server";
+import { PrismaClient } from "@prisma/client";
+
+const prisma: PrismaClient = new PrismaClient();
+
 
 export async function addExpenses(expenseData: Expense) {
   try {
