@@ -1,5 +1,5 @@
-import { type } from "os";
 import { PrismaClient } from "@prisma/client";
+import { Expense } from "~/types/expenses";
 
 const prisma: PrismaClient = new PrismaClient();
 
@@ -18,10 +18,3 @@ export async function addExpenses(expenseData: Expense) {
     throw new Error(`Error adding expense: ${error}`);
   }
 }
-
-type Expense = {
-  id: number;
-  title: string;
-  amount: number;
-  date: Date;
-};
